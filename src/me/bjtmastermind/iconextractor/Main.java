@@ -1,6 +1,6 @@
-package me.bjtmastermind.iconextracter;
+package me.bjtmastermind.iconextractor;
 
-import me.bjtmastermind.iconextracter.gui.Window;
+import me.bjtmastermind.iconextractor.gui.Window;
 
 public class Main {
 

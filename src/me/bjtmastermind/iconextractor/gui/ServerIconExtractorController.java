@@ -1,4 +1,4 @@
-package me.bjtmastermind.iconextracter.gui;
+package me.bjtmastermind.iconextractor.gui;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -21,14 +21,14 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
-import me.bjtmastermind.iconextracter.Main;
-import me.bjtmastermind.iconextracter.Utils;
+import me.bjtmastermind.iconextractor.Main;
+import me.bjtmastermind.iconextractor.Utils;
 import me.bjtmastermind.nbt.io.NBTUtil;
 import me.bjtmastermind.nbt.io.NamedTag;
 import me.bjtmastermind.nbt.tag.CompoundTag;
 import me.bjtmastermind.nbt.tag.ListTag;
 
-public class ServerIconExtracter {
+public class ServerIconExtractorController {
     @FXML
     private ListView<HBox> serverListlst;
     @FXML
@@ -43,10 +43,10 @@ public class ServerIconExtracter {
     public void onSelectServer(MouseEvent event) {
         if (serverListlst.getSelectionModel().selectedItemProperty().isNotNull().get()) {
             int selectedIndex = serverListlst.getSelectionModel().getSelectedIndex();
-            
+
             setIcon(((ImageView) serverListlst.getItems().get(selectedIndex).getChildren().get(0)).getImage());
             setName(((Text) ((VBox) serverListlst.getItems().get(selectedIndex).getChildren().get(1)).getChildren().get(0)).getText());
-            
+
             extractBtn.disableProperty().set(false);
         }
     }

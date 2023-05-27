@@ -1,4 +1,4 @@
-package me.bjtmastermind.iconextracter;
+package me.bjtmastermind.iconextractor;
 
 public class Utils {
 
