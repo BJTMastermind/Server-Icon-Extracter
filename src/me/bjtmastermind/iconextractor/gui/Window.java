@@ -14,7 +14,7 @@ public class Window extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("ServerIconExtractorController"), 720, 480);
+        scene = new Scene(loadFXML("ServerIconExtractor"), 720, 480);
         stage.setTitle("Minecraft Server Icon Extractor");
         // stage.getIcons().add(new Image(Main.class.getResource("images/icon.png").toString()));
         stage.setScene(scene);
