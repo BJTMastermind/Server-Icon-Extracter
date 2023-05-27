@@ -1,4 +1,4 @@
-# Server Icon Extracter
+# Server Icon Extractor
 
   A simple tool that allows you to extract a Minecraft: Java Edition servers icon.                                                                                         
 
