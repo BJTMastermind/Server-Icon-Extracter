@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #3A3A3A;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.bjtmastermind.iconextracter.gui.ServerIconExtracter">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="251.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="550.0" minWidth="10.0" prefWidth="469.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="463.0" prefWidth="251.0" spacing="5.0">
+         <children>
+            <ListView fx:id="serverListlst" onMouseClicked="#onSelectServer" prefHeight="435.0" prefWidth="251.0" stylesheets="@../css/listview.css" />
+            <Button fx:id="importBtn" mnemonicParsing="false" onMouseClicked="#importServers" prefWidth="150.0" text="Import" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="490.0" spacing="15.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <ImageView fx:id="serverIconImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/question_mark_icon.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="serverNameTxt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a server from the list" textAlignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="extractBtn" disable="true" mnemonicParsing="false" onMouseClicked="#extractIcon" prefWidth="150.0" text="Extract" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="35.0" />
+         </padding>
+      </VBox>
+   </children>
+</GridPane>
