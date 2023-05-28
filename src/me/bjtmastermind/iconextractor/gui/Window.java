@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import me.bjtmastermind.iconextractor.Main;
 
@@ -16,7 +17,7 @@ public class Window extends Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("ServerIconExtractor"), 720, 480);
         stage.setTitle("Minecraft Server Icon Extractor");
-        // stage.getIcons().add(new Image(Main.class.getResource("images/icon.png").toString()));
+        stage.getIcons().add(new Image(Main.class.getResource("images/icon.png").toString()));
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

@@ -4,7 +4,7 @@
 
 ## To Do
 
-- [ ] Add Program Icon
+- [x] Add Program Icon
 - [ ] Command Line Interface
 
 ## How To Use (UI)
