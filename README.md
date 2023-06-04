@@ -2,14 +2,17 @@
 
   A simple tool that allows you to extract a Minecraft: Java Edition servers icon.                                                                                         
 
-## To Do
-
-- [x] Add Program Icon
-- [x] Command Line Interface
-
 ## How To Use (UI)
 
-Coming Soon. (In progress)
+When you first open the program you will see a list of all your servers on the left. If you don't use the default Minecraft Launcher or use multiple you can click the "Import" button and select the `servers.dat` file that contains the server you want to extract the icon from.
+
+![sie_1](https://github.com/BJTMastermind/Server-Icon-Extractor/assets/18742837/7922f7ee-402a-4a61-87ef-829ae3e53126)
+
+Once you find the server in the list you want to extract the icon from click it, then click the "Extract" button and choose the output location. The file name will be the same as its displayed in the program.
+
+![sie_2](https://github.com/BJTMastermind/Server-Icon-Extractor/assets/18742837/35c152d6-2c9b-46b7-a1f4-b53b66f3670c)
+
+Done!
 
 ## How To Use (Command Line)
 
