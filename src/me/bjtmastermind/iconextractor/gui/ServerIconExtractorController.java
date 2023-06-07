@@ -65,8 +65,10 @@ public class ServerIconExtractorController {
         chooser.getExtensionFilters().add(filter);
         File selectedFile = chooser.showOpenDialog(Window.getScene().getWindow());
 
-        serverListlst.getItems().clear();
-        populateServerList(selectedFile.toString());
+        if (selectedFile != null) {
+            serverListlst.getItems().clear();
+            populateServerList(selectedFile.toString());
+        }
     }
 
     public void extractIcon(MouseEvent event) {
